@@ -167,7 +167,7 @@ export const russianLongInstructions = `Создайте подробное со
    Добавил уровень кэширования для часто запрашиваемых данных`;
 
 export const japanShortInstructions = `与えられた diff に基づいて簡潔な Git のコミットメッセージを生成します。以下のルールに従ってください：
-1. 以下のフォーマットを使ってください： <type>(<filename/scope>)： <説明
+1. 以下のフォーマットを使ってください： <タイプ>(<ファイル名/スコープ>): <説明
 2. タイプ:
 - feat: for new features or significant updates
 - fix: for bug fixes
