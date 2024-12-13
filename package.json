@@ -93,6 +93,7 @@
                     "type": "string",
                     "enum": [
                         "english",
+                        "japan",
                         "russian"
                     ],
                     "default": "english",
