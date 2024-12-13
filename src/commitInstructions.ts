@@ -14,7 +14,7 @@ export const englishShortInstructions = `Generate a concise Git commit message b
 3. Keep the entire message under 50 characters
 4. Use imperative mood (e.g., "Add" not "Added")
 5. Focus on the overall change, not specific details
-6. mention filename in scope without prefix and without line numbers
+6. mention filename in scope without prefix and without line numbers (e.g, "config.json" > "config")
 
 Few shot examples:
 1. Diff: Added new user authentication feature
@@ -50,8 +50,8 @@ export const englishLongInstructions = `Create a detailed Git commit message bas
 5. Use imperative mood in all lines
 6. Explain what and why, not how
 7. Mention significant changes and their impact
-8. mention filename in scope without prefix and without line numbers
-9. Maximum 5 lines total (including blank line)
+6. mention filename in scope without prefix and without line numbers (e.g, "config.json" > "config")
+7. Maximum 5 lines total (including blank line)
 
 Few shot examples:
 1. Diff: Implemented user registration and login functionality
@@ -98,7 +98,7 @@ export const russianShortInstructions = `Сгенерируйте краткое
 3. Не превышайте 50 символов во всем сообщении
 4. Используйте повелительное наклонение (например, «Добавьте», а не «Добавил»).
 5. Сосредоточьтесь на общем изменении, а не на конкретных деталях
-6. упоминайте имя файла в области видимости без префикса и без номеров строк
+6. указывайте имя файла в области видимости без префикса и без номеров строк (например, «config.json» > «config»)
 
 Примеры:
 1. Diff: Добавлена новая функция аутентификации пользователей
@@ -134,7 +134,7 @@ export const russianLongInstructions = `Создайте подробное со
 5. Используйте повелительное наклонение во всех строках
 6. Объясняйте, что и почему, а не как.
 7. Упоминайте существенные изменения и их влияние
-8. упоминайте имя файла в области видимости без префикса и без номеров строк
+6. указывайте имя файла в области видимости без префикса и без номеров строк (например, «config.json» > «config»)
 9. Не более 5 строк (включая пустую строку)
 
 Примеры:
@@ -182,7 +182,7 @@ export const japanShortInstructions = `与えられた diff に基づいて簡�
 3. メッセージ全体を50文字以内に収める
 4. 命令形を使用する（例：「Add 」ではなく、「Add」）。
 5. 特定の詳細ではなく、全体的な変更に焦点を当てる。
-6. スコープ内のファイル名には、接頭辞や行番号を付けずに記載する。
+6. スコープ内のファイル名を、接頭辞なし、行番号なしで記述する（例：「config.json」 > 「config」）
 
 いくつかのショット例
 1. 差分 新しいユーザー認証機能を追加
@@ -218,7 +218,7 @@ export const japanLongInstructions = `提供された diff を元に、Git の�
 5. 全ての行で命令形を使用する
 6. どのようにではなく、何を・なぜを説明する
 7. 重要な変更点とその影響を記載する
-8. スコープ内のファイル名は、接頭辞や行番号を付けずに記載する
+6. スコープ内のファイル名を、接頭辞なし、行番号なしで記述する（例：「config.json」 > 「config」）
 9. 全体で5行以内（空行を含む）
 
 例：
