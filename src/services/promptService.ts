@@ -22,12 +22,14 @@ export class PromptService {
     }
 
     private static getInstructions(language: string, messageLength: string): string {
-        type InstructionKey = 'english-short' | 'english-long' | 'russian-short' | 'russian-long' | 'custom';
+        type InstructionKey = 'english-short' | 'english-long' | 'japan-short' | 'japan-long' | 'russian-short' | 'russian-long' | 'custom';
         const key = `${language}-${messageLength}` as InstructionKey;
 
         const instructionsMap: Record<InstructionKey, string> = {
             'english-short': englishShortInstructions,
             'english-long': englishLongInstructions,
+            'japan-short': englishShortInstructions,
+            'japan-long': englishLongInstructions,
             'russian-short': russianShortInstructions,
             'russian-long': russianLongInstructions,
             'custom': customInstructions.replace('{customInstructions}', ConfigService.getCustomInstructions())
