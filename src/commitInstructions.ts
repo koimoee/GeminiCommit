@@ -200,9 +200,9 @@ export const japanShortInstructions = `与えられた diff に基づいて簡�
 5. 差分 効率化のためにデータベースクエリを再構築
    メッセージ: refactor(index)： データベースクエリを最適化する`;
 
-export const japanLongInstructions = `提供された diff を元に Git で詳細なコミットメッセージを作成します。以下のガイドラインに従ってください：
-1. 最初の行: <type>(<filename/scope>)： <brief summary> (50文字以内)。
-2. タイプ:
+export const japanLongInstructions = `提供された diff を元に、Git の詳細なコミットメッセージを作成してください。以下のガイドラインに従ってください：
+1. 最初の行: <タイプ>(<ファイル名/スコープ>): <短い概要>（50文字以内）
+2. 種類:
 - feat: for new features or significant updates
 - fix: for bug fixes
 - docs: for documentation changes
@@ -212,35 +212,32 @@ export const japanLongInstructions = `提供された diff を元に Git で詳�
 - chore: for small tasks, maintenance, or trivial changes
 - perf: for performance improvements
 - ci: for CI/CD pipeline updates
-- build: for changes that affect the build system or dependencies;
+- build: for changes that affect the build system or dependencies
+3. 最初の行の後に空行を挿入する
+4. 続く行: 詳細な説明を書く（72文字で改行する）
+5. 全ての行で命令形を使用する
+6. どのようにではなく、何を・なぜを説明する
+7. 重要な変更点とその影響を記載する
+8. スコープ内のファイル名は、接頭辞や行番号を付けずに記載する
+9. 全体で5行以内（空行を含む）
 
-例
-1.Diff: ユーザー登録とログイン機能の実装
-   メッセージ: feat(index): ユーザー認証システムを追加した。
+例：
+1. Diff: ユーザー登録とログイン機能を実装
+   メッセージ: feat(index): ユーザー認証システムを追加
 
-   安全な登録とログインプロセスの実装
-   新規アカウントのための電子メール認証の統合
-   アプリケーション全体のセキュリティの向上
+   安全なユーザー登録とログインプロセスを実装
+   新規アカウントのためにメール認証を統合
+   アプリケーション全体のセキュリティを強化
 
-2.差分: バックアップ中にデータが失われる重大なバグを修正した
-   メッセージ: fix(index): バックアップ中にデータが失われる問題を修正した。
+2. Diff: バックアップ中にデータが失われる重大なバグを修正
+   メッセージ: fix(index): バックアッププロセスのデータ損失を解決
 
-   バックアッププロセスにおける脆弱性の検出と修正
-   データの整合性チェックの追加
-   バックアップ時のエラー処理とロギングの改善
+   バックアップルーチンの脆弱性を特定して修正
+   追加のデータ整合性チェックを実装
+   バックアップのエラー処理とログ記録を改善
 
-3. Diff: 新しいエンドポイントを含むAPIドキュメントの更新
-   メッセージ: docs(index): API ドキュメントの改良
-
-   新しく実装された API エンドポイントの説明を追加
-   ユースケースとレスポンスフォーマットを追加
-   認証要件のセクションを更新
-
-4.差分: パフォーマンス向上のためのデータベースアクセスレイヤーのリファクタリング
-   メッセージ: refactor(index): データベース操作の最適化
-
-   コネクションプーリングを実装し、効率を向上させた
-   インデックスを使用した非効率なクエリを書き直した
-   頻繁にクエリされるデータのキャッシュレイヤーを追加しました;
+3. Diff: 新しいエンドポイントを含むAPIドキュメントを更新
+   メッセージ: docs(index): APIドキュメントを改善
+`;
 
 export const customInstructions = "{customInstructions}";
