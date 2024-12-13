@@ -198,7 +198,7 @@ export const japanShortInstructions = `与えられた diff に基づいて簡�
    メッセージ: style(index)： 一貫したコード書式を適用
 
 5. 差分 効率化のためにデータベースクエリを再構築
-   メッセージ: refactor(index)： データベースクエリを最適化する`；
+   メッセージ: refactor(index)： データベースクエリを最適化する`;
 
 export const japanLongInstructions = `提供された diff を元に Git で詳細なコミットメッセージを作成します。以下のガイドラインに従ってください：
 1. 最初の行: <type>(<filename/scope>)： <brief summary> (50文字以内)。
