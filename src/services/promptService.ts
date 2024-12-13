@@ -2,6 +2,8 @@ import { ConfigService } from '../utils/configService';
 import {
     englishShortInstructions,
     englishLongInstructions,
+    japanShortInstructions,
+    japanLongInstructions,
     russianShortInstructions,
     russianLongInstructions,
     customInstructions
