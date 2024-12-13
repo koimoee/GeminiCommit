@@ -28,8 +28,8 @@ export class PromptService {
         const instructionsMap: Record<InstructionKey, string> = {
             'english-short': englishShortInstructions,
             'english-long': englishLongInstructions,
-            'japan-short': englishShortInstructions,
-            'japan-long': englishLongInstructions,
+            'japan-short': japanShortInstructions,
+            'japan-long': japanLongInstructions,
             'russian-short': russianShortInstructions,
             'russian-long': russianLongInstructions,
             'custom': customInstructions.replace('{customInstructions}', ConfigService.getCustomInstructions())
